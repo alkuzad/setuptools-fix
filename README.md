@@ -1,3 +1,5 @@
+This is example of https://github.com/pypa/setuptools/issues/1417 issue, and potential solution:
+
 1. Create venv `python -mvenv tvenv` and source it (`call tvenv/Scripts/activate`)
 1. install server requirements using `pip install -r requirements.txt`
 2. Install patched setuptools (The only change is in `package_index.py` with `SETUPTOOLS_UNREDIRECTED_HEADER`):
